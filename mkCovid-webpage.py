@@ -16,12 +16,8 @@ with open(r"c:/tmp/covidStats", 'r') as fp:
     linesRead = len(lines)
     fp.close()
 
-# read the first line which contains the date the covidStats file was create
-# and leave the file pointer pointer to second lines
-
-# for elem in lines:
-#     dateOfRawData = elem
-#     break
+# read the first line
+# it contains the creation date of covidStats file
 dateOfRawData= lines[0]
 
 printHtmlHead(dateOfRawData, addedInfo)
