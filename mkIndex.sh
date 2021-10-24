@@ -16,7 +16,7 @@
 rm -f c:/tmp/index.html
 
 # read files: addedInfo and covidStats to create index.html
-c:/tmp/mk2colwebpg.py > c:/tmp/index.html
+./mkCovid-webpage.py  > c:/tmp/index.html
 
 #
 # python routine to lauch a webpage

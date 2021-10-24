@@ -1,6 +1,6 @@
 # this file defines the functions that are needed to insert
 # html code that show 2 bootstrap tables
-def printHtmlHead(dateOfRawData):
+def printHtmlHead(dateOfRawData,addedInfo):
     print('<!DOCTYPE html>')
     print('<html lang="en">')
     print('<head>')

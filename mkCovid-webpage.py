@@ -7,11 +7,11 @@ import sys
 from externFunc import printHtmlHead,printTableEnd, printTableStart
 from externFunc import printDocumentEnd, includeExternalCss
 
-with open(r"c:\tmp\addedInfo", 'r') as fp:
+with open(r"c:/tmp/addedInfo", 'r') as fp:
     addedInfo = fp.read()
     fp.close()
 
-with open(r"c:\tmp\covidStats", 'r') as fp:
+with open(r"c:/tmp/covidStats", 'r') as fp:
     lines = fp.readlines()
     linesRead = len(lines)
     fp.close()
@@ -24,7 +24,7 @@ with open(r"c:\tmp\covidStats", 'r') as fp:
 #     break
 dateOfRawData= lines[0]
 
-printHtmlHead(dateOfRawData)
+printHtmlHead(dateOfRawData, addedInfo)
 printTableStart()
 
 skipFirstLine=True
