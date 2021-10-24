@@ -2,7 +2,7 @@
 .T_borderStyle { border-style: solid; border-width: 1px; border-color: rgb(200,170,100);  }
 .bc { background: rgba(209, 164, 17,.05); }
 .shadow {box-shadow: -1px -4px 2px 1px ;}
-.shadow2 {box-shadow: 4px 4px 4px 1px rgb(200,200,200);}
+.shadow2 {box-shadow: 6px 6px 5px 1px rgb(200,200,200);}
 .GeeksForGeeks {width: fit-content; block-size: fit-content;
 	box-shadow: 2px 2px 12px 3px lightslategrey;
 	margin: auto;
