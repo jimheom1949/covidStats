@@ -1,0 +1,6 @@
+dirName=$(date +%m-%d)
+localHost=$HOME/web
+echo will create the directory ... $localHost/$dirName
+mkdir $localHost/$dirName
+cp /c/tmp/index.html $localHost/$dirName
+
