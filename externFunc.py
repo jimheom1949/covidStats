@@ -12,7 +12,7 @@ rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCE
 crossorigin="anonymous">')
     includeExternalCss()
     print('</head>')
-    print('<body style="margin:0% 1% 0 1%;padding:1%;background:  rgba(209, 164, 17,.2); height:98vh;">')
+    print('<body style="margin: 0 1%;padding:1%;background:  rgba(209, 164, 17,.2); height:98vh;">')
     print('<div class="container-fluid">')
     print('<div class="GeeksForGeeks" style="border-radius: 18px;">')
     print('<h5 style="padding: 20px;"> Oregon Daily Covid Infection Data for {}'.format(dateOfRawData) )
@@ -20,6 +20,7 @@ crossorigin="anonymous">')
     print('<div class="GeeksForGeeks" style="padding: 20px; border-radius: 15px; width: 50%; margin-top: 20px; font-size:1.1em;" >')
     print('{}'.format(addedInfo))    
     print('</div><br></div></div>')
+    includeFloaters()
     print('<div class="row g-3" style="width: 98%; margin: auto">')
 
 def printTableEnd():
@@ -27,7 +28,7 @@ def printTableEnd():
 
 def printTableStart():
     print('<div class="col-md-6">')
-    print('<table class="table table-striped table-sm T_borderStyle shadow2">')                
+    print('<table class="table table-striped table-sm T_borderStyle tableShadow">')                
     print('<tbody class="table-warning">')
     print('<tr><td>County:</td><td style="padding-right: 100px;">Infections</td></tr>')
 
@@ -42,4 +43,29 @@ def includeExternalCss():
     externalCss = file.read()
     file.close()
     print(externalCss)
+
+def includeFloaters():
+    print('    <div class="wrapper">')
+    print('    <div class="particle elem1 anim-delay1"></div>')
+    print('    <div class="particle elem2 anim-delay5"></div>')
+    print('\t<div class="particle elem2 anim-delay6"></div>')
+    print('\t<div class="particle elem3 anim-delay3"></div>')
+    print('\t<div class="particle elem4 anim-delay8"></div>')
+    print('\t<div class="particle elem5 anim-delay9"></div>')
+    print('\t<div class="particle elem6 anim-delay2"></div>')
+    print('\t<div class="particle elem7 anim-delay4"></div>')
+    print('\t<div class="particle elem8 anim-delay3"></div>')
+    print('\t<div class="particle elem9 anim-delay10"></div>')
+    print('\t<div class="particle elem11 anim-delay12"></div>')
+    print('\t<div class="particle elem12 anim-delay14"></div>')
+    print('\t<div class="particle elem13 anim-delay16"></div>')
+    print('\t<div class="particle elem14 anim-delay18"></div>')
+    print('\t<div class="particle elem15 anim-delay6"></div>')
+    print('\t<div class="particle elem16 anim-delay9"></div>')
+    print('\t<div class="particle elem17 anim-delay18"></div>')
+    print('\t<div class="particle elem17 anim-delay7"></div>')
+    print('\t<div class="particle elem18 anim-delay11"></div>')
+    print('\t<div class="particle elem18 anim-delay6"></div>')
+    print('\t<div class="particle elem19 anim-delay3"></div>')
+    print('</div>')
 

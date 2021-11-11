@@ -4,14 +4,15 @@
 #  this uses the bootstrap programming framework
 import os
 import sys
+
 from externFunc import printHtmlHead,printTableEnd, printTableStart
 from externFunc import printDocumentEnd, includeExternalCss
 
-with open(r"c:/tmp/addedInfo", 'r') as fp:
+with open(r".tmp/addedInfo", 'r') as fp:
     addedInfo = fp.read()
     fp.close()
 
-with open(r"c:/tmp/covidStats", 'r') as fp:
+with open(r".tmp/covidStats", 'r') as fp:
     lines = fp.readlines()
     linesRead = len(lines)
     fp.close()
@@ -69,6 +70,8 @@ for elem in lines:
         linesPerCol = 0
 
 # end of for ele in lines loop
+if (linesRead & 0x01) == 1:
+    print('<td>End of List</td><td></td></tr>')
 
 printTableEnd()
 printDocumentEnd()
