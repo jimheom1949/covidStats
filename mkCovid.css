@@ -9,7 +9,7 @@
 }
 .GeeksForGeeks {
 	width: fit-content; block-size: fit-content;
-	box-shadow: 2px 2px 12px 3px lightslategrey;
+	box-shadow: 2px 2px 12px 3px rgb(100,100,100);
 	margin: auto;
 }
 </style>

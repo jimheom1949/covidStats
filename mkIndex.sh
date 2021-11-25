@@ -47,3 +47,4 @@ url="c:\\tmp\\index.html"
 print(url)
 webbrowser.open(url, new=1)
 '
+# "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  --app=http://192.168.1.79:/index.html

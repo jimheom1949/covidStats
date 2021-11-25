@@ -12,6 +12,10 @@ with open(r".tmp/addedInfo", 'r') as fp:
     addedInfo = fp.read()
     fp.close()
 
+width='50%'
+if len(addedInfo) > 160:
+    width='60%'
+
 with open(r".tmp/covidStats", 'r') as fp:
     lines = fp.readlines()
     linesRead = len(lines)
@@ -21,7 +25,7 @@ with open(r".tmp/covidStats", 'r') as fp:
 # it contains the creation date of covidStats file
 dateOfRawData= lines[0]
 
-printHtmlHead(dateOfRawData, addedInfo)
+printHtmlHead(dateOfRawData, addedInfo, width)
 printTableStart()
 
 skipFirstLine=True
